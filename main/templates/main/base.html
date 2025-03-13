@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Base</title>{% endblock %}
+    <link rel="stylesheet" href="{% static 'base/style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        var csrfToken = "{{ csrf_token }}";
+    </script>
+    
+</head>
+<body>
+    <div class="topbar">
+        <h2>Employee Management System</h2>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Team</a></li>
+            <li><a href="#">Error Entry</a></li>
+            <li><a href="#">Error Resolution</a></li>
+            <li><a href="#">CA Approvals</a></li>
+            <li><a href="#">CA</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <p>Welcome to the Employee Management System. Use the sidebar to navigate.</p>
+    </div>
+
+    <script src="{% static 'base/script.js' %}"></script>
+</body>
+</html>
