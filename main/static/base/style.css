@@ -64,16 +64,3 @@ body {
     height: calc(100vh - 80px);
 }
 
-
-.team-member {
-    padding: 10px;
-    background: white;
-    margin: 5px 0;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    transition: background 0.3s ease;
-}
-
-.team-member:hover {
-    background: #f0f0f0;
-}
