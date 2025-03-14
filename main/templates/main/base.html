@@ -19,7 +19,7 @@
     <div class="sidebar">
         <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">My Team</a></li>
+            <li><a href="#" id="my-team-btn">My Team</a></li>
             <li><a href="#">Error Entry</a></li>
             <li><a href="#">Error Resolution</a></li>
             <li><a href="#">CA Approvals</a></li>
@@ -27,10 +27,22 @@
             <li><a href="#">Settings</a></li>
         </ul>
     </div>
+    
+    <!-- Secondary Sidebar (Initially Hidden) -->
+    <div class="team-sidebar" id="team-sidebar">
+        <select id="department-select">
+            <option value="">Select Department</option>
+        </select>
+        <ul id="team-list"></ul>
+    </div>
     <div class="main-content">
         <p>Welcome to the Employee Management System. Use the sidebar to navigate. TEST.</p>
     </div>
 
+    
+
     <script src="{% static 'base/script.js' %}"></script>
 </body>
+
+
 </html>
