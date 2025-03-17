@@ -67,7 +67,7 @@ body {
 .team-sidebar {
     /* width: 250px;
     height: 100vh; */
-    background: #515457;
+    background: #bd1d1d;
     position: fixed;
     left: 150px; /* Appears next to the main sidebar */
     top: 80px;
@@ -77,6 +77,7 @@ body {
     width: 200px;
     height: 100vh;
     color: white;
+    border: 1px solid black;
 }
 
 .team-sidebar select {
@@ -96,6 +97,7 @@ body {
     height:40px;
     margin-bottom: 5px;
     cursor: pointer; 
+    background: #515457;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black;
